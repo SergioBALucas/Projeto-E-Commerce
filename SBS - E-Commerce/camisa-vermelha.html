@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="imagens/favicon.ico">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergio Brito Amorim Lucas">
+    <meta name="description" content="Step-By-Step do Canal 'Easy Tutorials' sobre um Website de e-Commerce">
+    <meta name="tags" content="Step-By-Step, Produtos, PROA, Jailson">
+    <script src="https://kit.fontawesome.com/9dc58186f6.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Camisa Vermelha | RedStore </title>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar">
+            <div id="logo">
+                <a href="index.html">
+                    <img 
+                        src="imagens/logo.png" 
+                        width='125px' 
+                    >
+                </a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"><span>Início</span></a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="login.html">Conta</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html">
+                <img 
+                    src="imagens/carrinho.png" 
+                    width="30px" 
+                    height="30px"
+                >
+            </a>
+            <img 
+                src="imagens/menu.png" 
+                id="menu-icon"
+                onclick="menutoggle()"
+                width="30px" 
+                height="30px"
+            >
+        </div>
+    </div>
+    <!-- Detalhe do Produto -->
+    <div class="small-container" id="single-product">
+        <div class="row">
+            <div class="col-2">
+                <img 
+                    src="imagens/galeria-1.jpg"
+                    width="100%"
+                    id="product-img"
+                >
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img 
+                            src="imagens/galeria-1.jpg" 
+                            width="100%"
+                            class='small-img'
+                        >
+                    </div>
+                    <div class="small-img-col">
+                        <img 
+                            src="imagens/galeria-2.jpg" 
+                            width="100%"
+                            class='small-img'
+                        >
+                    </div>
+                    <div class="small-img-col">
+                        <img 
+                            src="imagens/galeria-3.jpg" 
+                            width="100%"
+                            class='small-img'
+
+                        >
+                    </div>
+                    <div class="small-img-col">
+                        <img 
+                            src="imagens/galeria-4.jpg" 
+                            width="100%"
+                            class='small-img'
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p><a href="index.html">Início</a> / <a href="#">Camisa Vermelha</a></p>
+                <h1>Camisa Vermelha</h1>
+                <h4>R$ 50,00</h4>
+                <select>
+                    <option>Selecione o tamanho</option>
+                    <option>XXG</option>
+                    <option>XG</option>
+                    <option>Grande</option>
+                    <option>Médio</option>
+                    <option>Pequeno</option>
+                </select>
+                <input type="number" value="1">
+                <a href="carrinho.html" class="btn">Adicionar ao Carrinho</a>
+                <h3>Detalhes do Produto <i class="fas fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam animi repudiandae voluptas praesentium sint tempore velit voluptate qui, voluptates ullam. Sapiente, harum inventore. Facere ullam unde at. Earum, quo ipsa.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Título -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produtos Relacionados</h2>
+            <p>Veja mais</p>
+        </div>
+    </div>
+    <!-- Mais Produtos -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img 
+                    src="imagens/produto-2.jpg" 
+                >
+                <h4>Tênis Preto</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R$ 150,00</p>
+            </div>
+            <div class="col-4">
+                <img 
+                    src="imagens/produto-3.jpg" 
+                >
+                <h4>Calça Cinza</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R$ 25,00</p>
+            </div>
+            <div class="col-4">
+                <img 
+                    src="imagens/produto-4.jpg" 
+                >
+                <h4>Camiseta Azul</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>R$ 75,00</p>
+            </div>
+            <div class="col-4">
+                <img 
+                    src="imagens/produto-5.jpg" 
+                >
+            <h4>Tênis "Cano-Alto" Cinza</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>R$ 250,00</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div id="footer-col-1">
+                    <h3>Baixe o nosso Aplicativo!</h3>
+                    <p>Baixe agora o nosso aplicativo para seu celular Android ou iOS</p>
+                    <div id="app-logo">
+                        <img 
+                            src="imagens/app-store.png" 
+                        >
+                        <img 
+                            src="imagens/play-store.png" 
+                        >
+                    </div>
+                </div>
+                <div id="footer-col-2">
+                    <img 
+                        src="imagens/logo-branca.png" 
+                    >
+                    <p>
+                        Nossa missão é trazer o prazer e benefícios dos esportes de maneira 
+                        sustentável para a maior quantidade de pessoas possível! 
+                    </p>
+                </div>
+                <div id="footer-col-3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Postagens do Blog</li>
+                        <li>Política de Devolução</li>
+                        <li>Afiliar-se</li>
+                    </ul>
+                </div>
+                <div id="footer-col-4">
+                    <h3>Siga-nos!</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p id='copyright'>Copyright 2021 - Todos os Direitos Reservados</p>
+        </div>
+    </div>
+</body>
+</html>
